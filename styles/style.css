@@ -85,12 +85,28 @@ h2 {
   max-width: 50%;
 }
 
+#skills-text ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#skills-text ul li {
+  margin: 10px 10px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
 .parallax-text {
   background-color: rgba(7, 114, 172, 0.8);
   border-radius: 5%;
   width: 40%;
-  height: 75%;
-  margin: 7.5% 7.5% 0 7.5%;
+  height: 520px;
+  margin: 80px 120px 0 120px;
   float: right;
   display: flex;
   flex-direction: column;
@@ -99,7 +115,7 @@ h2 {
 }
 
 .parallax-text p {
-  --padding: 5%;
+  --padding: 20px;
   padding-left: var(--padding);
   padding-right: var(--padding);
   text-align: justify;
