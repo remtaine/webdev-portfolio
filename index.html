@@ -7,39 +7,71 @@
     <title>Ben's Webdev Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="shortcut icon" href="images/avatar.png">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <script src="https://kit.fontawesome.com/d8f0c855f0.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li>|</li>
+            <li><a href="#">Portfolio</a></li>
+            <li>|</li>
+            <li><a href="#">Skills</a></li>
+            <li>|</li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-    <div class="has-flex" style="background-color: #39a4de;">
+    <div class="has-flex" id="front-card" style="background-color: #39a4de;">
         <div class="flex-item">
             <h2>Hello there!</h2>
-            <p>My name is Ben, a freelance web developer. Ready to serve you!</p>
+            <p>I'm Ben, a freelance web developer. Ready to serve you!</p>
             <h3>Contact me at:</h3>
             <ul>
-                <li>Email:</li>
-                <li>Github:</li>
-                <li>Twitter:</li>
+                <li><i class="fas fa-envelope"></i><a class="front-link" href="mailto:lorem@gmail.com">lorem@gmail.com</a></li>
+                <li><i class="fab fa-github"></i><a class="front-link" href="#">github.com/ipsum</a></li>
+                <li><i class="fab fa-twitter"></i><a class="front-link" href="#">twitter.com/dolor</a></li>
             </ul>
         </div>
         <img class="flex-item" id="avatar" src="images/avatar.png" alt="">
     </div>
 
-    <div class="has-parallax" style="background-image: url(images/bg1.jpg)">
-        <h2>About Me</h2>
+    <div class="has-parallax" style="background-image: url(images/bg2.jpg)">
+        <div class="parallax-text">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </div>
     <div class="mid-text" style="background-color: #EDB98A;">
         <h2>Portfolio</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="has-parallax" style="background-image: url(images/bg2.jpg)">
-        <h2>Skills In</h2>
+    <div class="has-parallax" style="background-image: url(images/bg1.jpg)">
+        <div class="parallax-text" style="float: left">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fab fa-wordpress"></i>Wordpress</li>
+                <li><i class="fab fa-html5"></i>HTML5</li>
+                <li><i class="fab fa-js-square"></i>Javascript</li>
+                <li><i class="fab fa-css3-alt"></i>CSS3</li>
+                <li><i class="fab fa-android"></i>Android</li>
+                <li><i class="fab fa-unity"></i>Unity</li>
+                <li><i class="fab fa-java"></i></i>Java</li>
+                <li><i class="devicon-cplusplus-plain"></i>C++</li>
+                <li><i class="fab fa-python"></i></i>Python</li>
+                <li><i class="devicon-csharp-plain"></i>C Sharp</li>
+                
+            </ul>
+        </div>
     </div>
-    <div class="mid-text" style="background-color: #65C9FF;">
+    <div class="mid-text" style="background-color: #39a4de;">
         <h2>Personal Projects</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -48,21 +80,30 @@
             laborum.</p>
     </div>
     <div class="has-parallax" style="background-image: url(images/bg3.jpg)">
-        <h2>How I Can Help You</h2>
+        <div class="parallax-text">
+            <h2>How I Can Help</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </div>
-    <div class="mid-text" style="background-color: #EDB98A;">>
+    <div class="mid-text" style="background-color: #EDB98A;">
         <h2>Contact Me!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
     </div>
     </main>
-
-    <footer>
-        <div class="has-flex"></div>
-    </footer>
+    <!--
+    <footer class="has-flex">
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </footer>-->
 </body>
 
 </html>
