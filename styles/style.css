@@ -67,6 +67,10 @@ h2 {
   font-size: 64px;
 }
 
+#front-card {
+  height: 60%;
+}
+
 #front-card * p {
   font-size: 32px;
   margin-right: 20px;
@@ -104,9 +108,9 @@ h2 {
 .parallax-text {
   background-color: rgba(7, 114, 172, 0.8);
   border-radius: 5%;
-  width: 40%;
-  height: 520px;
-  margin: 80px 120px 0 120px;
+  max-width: 480px;
+  height: 480px;
+  margin: 100px 10% 0 10%;
   float: right;
   display: flex;
   flex-direction: column;
@@ -114,7 +118,8 @@ h2 {
   align-items: center;
 }
 
-.parallax-text p {
+.parallax-text p,
+.parallax-text h2 {
   --padding: 20px;
   padding-left: var(--padding);
   padding-right: var(--padding);
@@ -130,15 +135,13 @@ h2 {
   background-position: center;
   box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.4) inset,
     0px -5px 5px 0 rgba(0, 0, 0, 0.4) inset;
-  /*filter: blur(1px);
-  -webkit-filter: blur(8px);*/
 }
 
 .mid-text {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 60%;
+  min-height: 100%;
   border-radius: 0;
 
   display: flex;
@@ -149,8 +152,10 @@ h2 {
 
 .mid-text h2 {
   margin: 0;
-  padding: 0;
-  align-self: center;
+  --padding: 20px;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  text-align: justify;
 }
 
 .mid-text p {
